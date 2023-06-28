@@ -17,7 +17,6 @@ use App\Http\Controllers\UsuarioController;
 */
 
 Route::get('/', HomeController::class)->name('home'); 
-Route::post('painel', [UsuarioController::class, 'login'])->name('usuarios.login'); 
-Route::post('intrutores', [CadInstrutoresController::class, 'index'])->name('instrutores.index'); 
+Route::post('painel', [UsuarioController::class, 'login'])->name('usuarios.login'); // rotas tela de login
+Route::get('instrutores', [CadInstrutoresController::class, 'index'])->name('instrutores.index'); // rotas tela de instrutores
 
-    
